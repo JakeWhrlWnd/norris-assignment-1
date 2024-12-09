@@ -1,9 +1,14 @@
+:root {
+	--bg-color: #4915f8;
+	--light-orange: #ea9e3d;
+	--medium-orange: #ee7e38;
+	--button-gradient: linear-gradient(0.25turn, #ea9e3d, #ee7e38);
+	--light-copy: 300;
+	--reg-copy: 400;
+	--bold-copy: 700;
+}
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-grow: 1 2 1;
-	background-color: #4915f8;
+	background-color: var(--bg-color, #4915f8, mediumblue);
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 }
@@ -14,16 +19,17 @@ header {
 	align-items: center;
 }
 
+a {
+	text-decoration: none;
+}
+
 nav ul {
 	margin-right: 10rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 10px;
-}
-
-nav ul li a {
-	text-decoration: none;
+	font-weight: var(--light-copy);
 }
 
 main {
@@ -43,11 +49,20 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 50%;
 }
 
 #section-one {
 	background-image: url(../images/picture-1.gif);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	background-position: right bottom;
+}
+
+#section-one-info h1 {
+	font-weight: var(--light-copy);
+}
+
+.button {
+	background: var(--button-gradient);
+	padding: 1rem 2rem;
 }
