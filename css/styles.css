@@ -66,3 +66,14 @@ main {
 	background: var(--button-gradient);
 	padding: 1rem 2rem;
 }
+
+#section-two {
+	display: flex;
+	flex-direction: column;
+}
+
+#section-two-articles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
