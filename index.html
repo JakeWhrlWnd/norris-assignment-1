@@ -12,20 +12,23 @@
 </head>
 <body>
 	<header>
-		<!-- Create two separate divs, one for the logo and one for the links-->
-		<a href="#"><img src="images/logo.png" alt="Brain.fm logo"></a>
-		<a href="#">Sign In</a>
-		<a href="#">Try for free</a>
+		<div class="logo-div">
+			<img src="images/logo.png" alt="Brain.fm logo">
+		</div>
+		<nav class="page-nav">
+			<a href="#">Sign In</a>
+			<input type="button" value="Try for free">
+		</nav>
 	</header>
 
 	<main>
-		<section>
+		<section id="section-one" class="section" role="sectionOne">
 			<h1>Functional Music to Improve</h1>
 			<h2>Focus in 15 Minutes</h2>
 			<p>Our science-first approach creates music that sounds different-and affects your brain differently-than any other music.</p>
 			<h3>FEATURED IN</h3>
 			<img src="images/clout.png" alt="Magazines that have featured our service">
-			<a href="#">Try 5 free sessions</a>
+			<input type="button" value="Try 5 free sessions">
 			<!--May use this in the CSS as a background-image-->
 			<img src="images/picture-1.gif" alt="">
 		</section>
@@ -33,7 +36,7 @@
 			<div>
 				<h2>Wanna see the science?</h2>
 			</div>
-			<article>
+			<article class="card">
 				<img src="images/picture-2.gif" alt="">
 				<h3>Patented Technology</h3>
 				<p>Brain.fm holds patents on key processes for creating functional music, including technology to elicit string neural phase locking-allowing populations of nuerons to engage in various kinds of coordinated activity-and technology to remove distraction in sound.</p>
@@ -41,7 +44,7 @@
 				<a href="#">Explore More of Our Science</a>
 			</article>
 
-			<article>
+			<article class="card">
 				<img src="images/picture-3.png" alt="">
 				<h3>Tested on Brain and Behavior</h3>
 				<p>Scientists at Brain.fm work with collaborators at academic institutions to run experiements</p>
